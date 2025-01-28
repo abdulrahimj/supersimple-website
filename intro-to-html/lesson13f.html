@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p{
+        margin: 0;
+        font-family: Segoe UI;
+      }
+      .outer-div{
+        height: 250px;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .top-div{
+        height: 100px;
+        display: flex;
+      }
+
+      .picture-div{
+        height: 100px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .pic{
+        height: 70px;
+        width: 70px;
+        border-radius: 35px;
+        object-fit: fill;
+      }
+
+      .info1-div{
+        height: 100px;
+        flex: 1;
+      }
+
+      .line1{
+        font-weight: bold;
+      }
+
+      .subline{
+        color: rgb(96, 96, 96);
+      }
+
+      .line2{
+        font-weight: 500;
+      }
+
+      .bottom-div{
+        height: 150px;
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+      }
+
+      .shadow-div{
+        border-style: solid;
+        border-color: rgb(211, 209, 209);
+        border-width: 2px;
+        border-radius: 10px 0 0 10px;
+        background-color: rgb(186, 185, 185);
+        height: 100px;
+        width: 100px;
+        margin-right: -1px;
+      }
+
+      .info2-div{
+        border-style: solid;
+        border-color: rgb(211, 209, 209);
+        border-width: 2px;
+        border-radius: 0 10px 10px 0;
+        height: 100px;
+        width: 250px;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .top-line{
+        color: rgb(96, 96, 96);
+        font-weight: 500;
+        margin-left: 15px;
+      }
+
+      .down-line{
+        font-weight: 500;
+        margin-left: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-div">
+      <div class="top-div">
+        <div class="picture-div">
+          <img class="pic" src="pp5.webp">
+        </div>
+        <div class="info1-div">
+          <p class="line1">supersimple.dev <span class="subline">@SuperSimpleDev</span></p>
+          <p class="line2">What is backed web development? A complete overview. New video is up!</p>
+        </div>
+      </div>
+      <div class="bottom-div">
+        <div class="shadow-div"></div>
+        <div class="info2-div">
+          <p class="top-line">youtube.com</p>
+          <p class="down-line">Backend web development - a complete overview (2021)</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

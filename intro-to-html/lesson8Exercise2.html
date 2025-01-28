@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sing up form</title>
+    <style>
+      body{
+        font-family: Arial;
+      }
+      .fn, .ln{
+        width: 120px;
+        padding: 8px;
+        padding-left: 10px;
+        border-radius: 6px;
+        border-style: solid;
+        display: inline-block;
+      }
+
+      .email{
+        width: 265px;
+        padding: 8px;
+        padding-left: 10px;
+        border-radius: 6px;
+        border-style: solid;
+        display: block;
+        margin-top: 10px;
+      }
+
+      .sign{
+        margin-top: 10px;
+        width: 285px;
+        padding: 10px;
+        padding-left: 10px;
+        display: block;
+        background-color: rgb(14, 142, 241);
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        border: none;
+        border-radius: 6px;
+        margin-bottom: 50px;
+      }
+
+      .dest, .pickup{
+        width: 265px;
+        padding: 8px;
+        padding-left: 10px;
+        border-radius: 6px;
+        border-style: solid;
+        display: block;
+        margin-top: 10px;
+        background-color: rgb(242, 244, 244);
+      }
+
+      .request, .later{
+        margin-top: 10px;
+        width: 120px;
+        padding: 10px;
+        padding-left: 10px;
+        display: inlline-block;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        border: none;
+        margin-bottom: 50px;
+      }
+
+      .later{
+        width: 150px;
+        background-color: rgb(242, 244, 244);
+        color: black;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <input class="fn" type="text" placeholder="First name">
+    <input class="ln" type="text" placeholder="Last name">
+    <input class="email" type="text" placeholder="Email">
+    <button class="sign">Sign Up</button>
+
+    <h1>Request a ride now</h1>
+    <input class="pickup" type="text" placeholder="Enter a pickup location">
+    <input class="dest" type="text" placeholder="Enter destination">
+    <button class="request">Request now</button>
+    <button class="later">Schedule for later</button>
+  </body>
+</html>

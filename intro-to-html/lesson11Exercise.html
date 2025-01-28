@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .video-grid-1 {
+        display: grid;
+        grid-template-columns: 200px 75px;
+        margin-bottom: 10px;
+      }
+
+      .div200 {
+        background-color: rgb(146, 235, 247);
+      }
+      
+      .div75 {
+        background-color: rgb(225, 172, 172);
+      }
+
+      .video-grid-2 {
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+        margin-bottom: 10px;
+      }
+
+      .col1,
+      .col3 {
+        background-color: aqua;
+      }
+
+      .col2,
+      .col4 {
+        background-color: lightpink;
+      }
+
+      .video-grid-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 100px;
+        column-gap: 20px;
+        row-gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-grid-1">
+      <div class="div200"> 200px</div>
+      <div class="div75">75px</div>
+    </div>
+
+    <div class="video-grid-2">
+      <div class="col1">col1</div>
+      <div class="col2">col2</div>
+      <div class="col3">col3</div>
+    </div>
+
+    <div class="video-grid-3">
+      <div class="col1">col1</div>
+      <div class="col2">col2</div>
+      <div class="col3">col3</div>
+      <div class="col4">col4</div>
+
+      <div class="col1">col1</div>
+      <div class="col2">col2</div>
+      <div class="col3">col3</div>
+      <div class="col4">col4</div>
+    </div>
+  </body>
+</html>

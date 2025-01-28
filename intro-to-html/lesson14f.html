@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body{
+        height: 3000px;
+        background-color: black;
+        margin: 0;
+      }
+
+      p{
+        margin: 0;
+        margin-bottom: 15px;
+      }
+      .header-div{
+        border-width: 2px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 70px;
+        position: fixed;
+        right: 0;
+        left: 0;
+        background-color: white;
+      }
+
+      .left-sec-div{
+        display: flex;
+        width: 300px;
+        align-items: center;
+      }
+
+      .right-sec-div{
+        display: flex;
+        flex: 1;
+        justify-content: end;
+      }
+
+      .pic{
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        margin-right: 10px;
+      }
+
+      .name{
+        font-family: 'Segoe UI';
+        font-weight: 500;
+        padding-top: 8px;
+      }
+
+      .add{
+        background-color: rgb(38, 109, 249);
+        border: none;
+        padding: 7px 8px;
+        color: white;
+        border-radius: 4px;
+      }
+
+      .message{
+        margin-right: 20px;
+        margin-left: 10px;
+        background-color: rgb(233, 233, 233);
+        border: none;
+        padding: 7px 8px;
+        color: rgb(0, 0, 0);
+        border-radius: 4px;
+      }
+
+      .discord-div{
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        height: 3000px;
+      }
+
+      .sidebar-left-div{
+        background-color: rgb(23, 23, 23);
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        top: 70px;
+        left: 0;
+        width: 80px;
+        margin-top: 10px;
+        padding-top: 20px;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .sidebar-right-div{
+        background-color: rgb(47, 46, 46);
+        position: fixed;
+        bottom: 0;
+        top: 70px;
+        left: 80px;
+        width: 170px;
+        margin-top: 10px;
+        padding-left: 15px;
+        color: white;
+        font-family: Segoe UI;
+      }
+
+      .info{
+        font-weight: bold;
+      }
+
+      .plus{
+        margin-left: 100px;
+        font-size: 30px;
+        font-weight: 400;
+        padding-top: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-div">
+      <div class="left-sec-div">
+        <img class="pic" src="pp6.webp">
+        <p class="name">Haja Umu Hawa</p>
+      </div>
+      <div class="right-sec-div">
+        <button class="add">Add Friend</button>
+        <button class="message">Message</button>
+      </div>
+    </div>
+
+    <div class="discord-div">
+      <div class="sidebar-left-div">
+        <img class="pic" src="pp5.webp">
+        <img class="pic" src="pp6.webp">
+        <img class="pic" src="pp.png">
+      </div>
+      <div class="sidebar-right-div">
+        <p class="info">INFO <span class="plus">&#43;</span></p>
+        <p>&#35; new-videos</p>
+        <p>&#35; updates</p>
+        <p>&#35; faq</p>
+      </div>
+    </div>
+  </body>
+</html>

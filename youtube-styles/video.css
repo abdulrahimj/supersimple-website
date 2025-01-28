@@ -1,0 +1,143 @@
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 70px;
+}
+
+@media (max-width: 800px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (min-width: 801px) and (max-width: 999px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .video-title{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .video-stats,
+  .video-author{
+    font-size: 14px;
+  }
+}
+
+.thumbnail{
+  width: 100%;
+  cursor: pointer;
+}
+
+.thumbnail-row {
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.video-info a{
+  text-decoration: none;
+  color: black;
+}
+
+.video-title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.video-author, 
+.video-stats {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.video-author {
+  margin-bottom: 4px;
+}
+
+.profile-picture {
+  width: 75%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.channel-picture{
+  position: relative;
+}
+
+.profile-picture-tooltip-div{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  bottom: -5;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  width: 300px;
+  height: 90px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.channel-picture:hover .profile-picture-tooltip-div{
+  opacity: 1;
+}
+
+.picture{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.picture .profile-picture{
+  width: 70px;
+  height: 70px;
+}
+
+.picture-info{
+  padding-left: 10px;
+}
+
+.picture-info .name{
+  font-weight: 700;
+  font-size: 17px;
+  padding-bottom: 5px;
+}
+
+.picture-info .subscribe{
+  color: rgb(96, 96, 96);
+  font-weight: 500;
+}
+
+.video-time{
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+}

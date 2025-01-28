@@ -1,0 +1,19 @@
+body{
+  font-family: Montserrat;
+}
+
+.model{
+  text-align: center;
+}
+
+.online{
+  text-align: center;
+}
+
+.touch{
+  text-decoration: underline;
+}
+
+.touch:hover{
+  cursor: pointer;
+}

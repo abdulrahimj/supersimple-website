@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+header {
+  background-color: #56acf2;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flexbox;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #ed1e1e;
+}
+
+.container {
+  display:grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.about, .portfolio, .contact {
+  background-color: rgb(179, 175, 175);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #56acf2;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  font-family: Verdana;
+}
+
+/* Desktop Layout */
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .portfolio {
+    grid-column: span 1;
+  }
+}
+
+/* Tablet Layout */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portfolio {
+    grid-column: span 1;
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 767px) {
+  nav {
+    flex-direction:column;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
